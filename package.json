@@ -1,0 +1,22 @@
+{
+  "name": "super-gulp",
+  "version": "1.0.0",
+  "description": "Learn Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devheedoo/super-gulp.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Choco Kim <devheedoo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devheedoo/super-gulp/issues"
+  },
+  "homepage": "https://github.com/devheedoo/super-gulp#readme"
+}
