@@ -4,7 +4,8 @@
   "description": "Learn Gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/devheedoo/super-gulp/issues"
   },
-  "homepage": "https://github.com/devheedoo/super-gulp#readme"
+  "homepage": "https://github.com/devheedoo/super-gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9"
+  }
 }
