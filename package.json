@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/devheedoo/super-gulp#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.16.7",
