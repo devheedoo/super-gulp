@@ -3,6 +3,8 @@ import gulpPug from 'gulp-pug';
 import del from 'del';
 import gulpWebserver from 'gulp-webserver';
 import gulpImage from 'gulp-image';
+import gulpAutoprefixer from 'gulp-autoprefixer';
+import gulpCsso from 'gulp-csso';
 
 const gulpSass = require('gulp-sass')(require('node-sass'));
 
@@ -38,6 +40,8 @@ const styles = () =>
   gulp
     .src(routes.scss.src)
     .pipe(gulpSass().on('error', gulpSass.logError))
+    .pipe(gulpAutoprefixer())
+    .pipe(gulpCsso())
     .pipe(gulp.dest(routes.scss.dest));
 
 const watch = () => {

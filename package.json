@@ -23,6 +23,8 @@
   "devDependencies": {
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-csso": "^4.0.1",
     "gulp-image": "^4.0.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
