@@ -21,15 +21,18 @@
   },
   "homepage": "https://github.com/devheedoo/super-gulp#readme",
   "devDependencies": {
+    "babelify": "^10.0.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-bro": "^2.0.0",
     "gulp-csso": "^4.0.1",
     "gulp-image": "^4.0.1",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-webserver": "^0.9.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "uglifyify": "^5.0.2"
   },
   "dependencies": {
     "@babel/core": "^7.16.7",
