@@ -25,7 +25,9 @@
     "gulp": "^4.0.2",
     "gulp-image": "^4.0.1",
     "gulp-pug": "^5.0.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-sass": "^5.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^7.0.1"
   },
   "dependencies": {
     "@babel/core": "^7.16.7",
