@@ -1,3 +1,0 @@
-# Super Gulp
-
-Learn Gulp
