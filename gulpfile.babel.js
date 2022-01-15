@@ -7,6 +7,7 @@ import gulpAutoprefixer from 'gulp-autoprefixer';
 import gulpCsso from 'gulp-csso';
 import gulpBro from 'gulp-bro';
 import babelify from 'babelify';
+import gulpGhPages from 'gulp-gh-pages';
 
 const gulpSass = require('gulp-sass')(require('node-sass'));
 
@@ -35,7 +36,7 @@ const routes = {
 const pug = () =>
   gulp.src(routes.pug.src).pipe(gulpPug()).pipe(gulp.dest(routes.pug.dest));
 
-const clean = () => del(['build']);
+const clean = () => del(['build', '.publish']);
 
 const webserver = () =>
   gulp.src('build').pipe(gulpWebserver({ livereload: true, open: true }));
@@ -71,12 +72,12 @@ const watch = () => {
   gulp.watch(routes.js.watch, js);
 };
 
+const ghPages = () => gulp.src('build/**/*').pipe(gulpGhPages());
+
 const prepare = gulp.series([clean, img]);
 const assets = gulp.series([pug, styles, js]);
 const postDev = gulp.parallel([webserver, watch]);
 
-export const dev = gulp.series([prepare, assets, postDev]);
-
-// pug -> html
-// scss -> css
-// optimize
+export const build = gulp.series([prepare, assets]);
+export const dev = gulp.series([build, postDev]);
+export const deploy = gulp.series([build, ghPages, clean]);
